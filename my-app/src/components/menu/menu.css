@@ -24,6 +24,12 @@
   right: 0;
 }
 
+@media (max-width: 768px) {
+  .menu.active {
+    right: -220px;
+  }
+}
+
 .menu ul {
   margin: 0;
   padding: 0;
@@ -31,6 +37,12 @@
   font-size: 30px;
   font-weight: 300;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    font-size: 15px;
+  }
 }
 
 .menu ul li {

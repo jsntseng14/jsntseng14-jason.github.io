@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import PortfolioList from '../portfolioList/PortfolioList';
-import './portfolio.css'
+import './portfolio.scss'
 import {
   featuredPortfolio,
   webPortfolio,

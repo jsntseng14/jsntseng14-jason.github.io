@@ -1,5 +1,5 @@
 import React from 'react'
-import './topbar.css'
+import './topbar.scss'
 import {Person, Mail} from '@material-ui/icons'
 import HomeIcon from '@material-ui/icons/Home';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';

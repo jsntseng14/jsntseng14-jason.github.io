@@ -1,5 +1,5 @@
 import React from 'react';
-import './works.css';
+import './works.scss';
 import { useState } from 'react';
 
 export default function Works() {

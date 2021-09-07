@@ -5,6 +5,18 @@
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .intro .left {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
@@ -27,11 +39,26 @@
   float: right;
 }
 
+@media (max-width: 768px) {
+  .intro .left .imgContainer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .intro .left .imgContainer img {
   height: 85%;
   width: 85%;
   margin: 80px;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .intro .left .imgContainer img {
+    height: 30%;
+    width: 30%;
+  }
 }
 
 .intro .right {
@@ -57,9 +84,24 @@
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .intro .right .wrapper {
+    padding-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .intro .right .wrapper h1 {
   font-size: 60px;
   margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .intro .right .wrapper h1 {
+    font-size: 40px;
+  }
 }
 
 .intro .right .wrapper h2 {
@@ -68,6 +110,12 @@
 
 .intro .right .wrapper h3 {
   font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .intro .right .wrapper h3 {
+    font-size: 20px;
+  }
 }
 
 .intro .right .wrapper h3 span {
