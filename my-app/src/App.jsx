@@ -4,9 +4,10 @@ import Portfolio from './components/portfolio/Portfolio';
 import Works from './components/works/Works';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
-import './app.css';
+import './app.scss';
 import { useState } from 'react';
 import Menu from './components/menu/Menu';
+import Quote from './components/Quotes/Quote'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -16,6 +17,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className='sections'>
         <Intro/>
+        <Quote/>
         <Portfolio/>
         <Works/>
         <Testimonials/>
