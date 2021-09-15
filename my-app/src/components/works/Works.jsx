@@ -6,6 +6,7 @@ import { useState } from 'react';
 export default function Works() {
 
   //comment
+  // organize
   const [currentSlide, setCurrentSlide] = useState(0)
   const data = [
     {
