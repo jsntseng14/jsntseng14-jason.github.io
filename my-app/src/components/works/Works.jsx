@@ -2,7 +2,10 @@ import React from 'react';
 import './works.scss';
 import { useState } from 'react';
 
+
 export default function Works() {
+
+  //comment
   const [currentSlide, setCurrentSlide] = useState(0)
   const data = [
     {
