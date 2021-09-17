@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Menu from './components/menu/Menu';
 import Quote from './components/Quotes/Quote'
 
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
