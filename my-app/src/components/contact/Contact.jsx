@@ -2,6 +2,8 @@ import React from 'react'
 import './contact.scss'
 import { useState } from 'react';
 
+//comments
+
 export default function Contact() {
 
   const [message, setMessage] = useState(false)
