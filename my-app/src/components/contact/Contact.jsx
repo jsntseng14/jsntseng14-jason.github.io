@@ -5,9 +5,7 @@ import { useState } from 'react';
 //comments
 
 export default function Contact() {
-
   const [message, setMessage] = useState(false)
-
   const handleSubmit = (e) =>{
     e.preventDefault();
     setMessage(true);
