@@ -6,7 +6,18 @@ export default function Quote() {
   let item = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+    const tl = gsap.timeline();
+    tl.to(".intro-text", {duration: 1.5, rotation: 360});
+    tl.to(".intro-text", {duration: 1.5, rotation: 180});
+    // TweenMax.to(
+    //   item,
+    //   .8,
+    //   {
+    //     opacity: 1,
+    //     y: -20,
+    //     ease: Power3.easeOut,
+    //   }
+    // )
 
     // tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
     // tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
