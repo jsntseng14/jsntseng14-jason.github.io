@@ -18,7 +18,6 @@ export default function Intro() {
     // tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
     init(textRef.current, {
-      showCursor: false,
       backDelay: 1500,
       backSpeed: 60,
       showCursor: true,
