@@ -1,36 +1,46 @@
 @import "../../global.scss";
 
-.landing {
-  display: flex;
+.hero {
+  display: grid;
+  grid-template-columns: 66% auto;
+  background-color: unset;
+  padding: 0;
 
-  .left {
-    flex: 0.5;
+  .content {
+    background-color: #6e00ff;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+    border-radius: 14px;
+    margin-left: 4em;
+    margin-bottom: 1em;
 
-    .wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      flex-direction: column;
-
-      h1 {
-        font-size: 50px;
-      }
-
-      h2 {
-        font-size: 30px;
-        margin: 14px 0;
-      }
-
-      h3 {
-        font-size: 40px;
-      }
+    h1 {
+      font-size: 4.5em;
+      line-height: 1.2em;
+      color: white;
+      text-align: left;
+      margin: 0.3em;
+      margin-left: 2em;
+    }
+    p {
+      color: #ff64cb;
+      text-align: left;
+      margin-left: 9em;
+    }
+    .scroll {
+      margin-top: 4em;
+      margin-left: 12em;
     }
   }
+}
 
-  .right {
-    flex: 0.5;
-    background-color: white;
-  }
+.meet {
+  margin: unset;
+}
+
+.hero-design {
+  display: unset;
+  margin-left: -50%;
+  margin-top: 15%;
+  width: 100%;
 }
