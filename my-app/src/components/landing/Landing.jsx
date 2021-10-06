@@ -1,5 +1,5 @@
 import { useRef, React, useEffect } from 'react'
-import {TweenMax, Power3, gsap} from 'gsap'
+import {TweenMax, gsap} from 'gsap'
 import './landing.scss'
 
 export default function Landing() {
