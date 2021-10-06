@@ -6,8 +6,8 @@ export default function Quote() {
   let item = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline();
-    tl.to(".intro-text", {duration: 1.5, rotation: 360});
+    // const tl = gsap.timeline();
+    // tl.to(".intro-text", {duration: 20, rotation: 360});
     // TweenMax.to(
     //   item,
     //   .8,
