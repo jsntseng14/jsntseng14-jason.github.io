@@ -21,7 +21,7 @@ export default function Intro() {
       backDelay: 1500,
       backSpeed: 60,
       showCursor: true,
-      strings: ['Developer', 'Designer', 'Content Creator'],
+      strings: ['Front-End', 'Full-Stack', 'Back-End'],
     });
   },[]);
   return (
@@ -35,7 +35,7 @@ export default function Intro() {
           <div className='wrapper'>
             <h2>Hi There, I'm</h2>
             <h1>Jason Tseng</h1>
-            <h3>Freelance <span ref={textRef}></span></h3>
+            <h3><span ref={textRef}></span>Developer</h3>
           </div>
         <a href='#portfolio'>
           <img src='assets/down.png' alt=''/>

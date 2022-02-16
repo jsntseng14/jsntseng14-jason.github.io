@@ -7,6 +7,9 @@
   padding: 0;
 
   .content {
+    @include mobile {
+      display: none;
+    }
     background-color: #6e00ff;
     padding: 6em 8em 6em 4em;
     text-align: left;
@@ -15,6 +18,9 @@
     margin-bottom: 1em;
 
     h1 {
+      @include mobile {
+        font-size: 2.5em;
+      }
       font-size: 4.5em;
       line-height: 1.2em;
       color: white;
@@ -39,6 +45,9 @@
 }
 
 .hero-design {
+  @include mobile {
+    display: none;
+  }
   display: unset;
   margin-left: -50%;
   margin-top: 15%;

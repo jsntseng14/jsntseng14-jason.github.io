@@ -1,7 +1,7 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Social Media App",
+    title: "put a lot of words in here to see what it looks like or how it feels",
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
   },

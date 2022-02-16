@@ -1,8 +1,10 @@
-import { React, useEffect } from 'react'
+import { React, useEffect, useState} from 'react'
 import {gsap} from 'gsap'
 import './landing.scss'
 
 export default function Landing() {
+
+  const [circleClick, setCircleClick] = useState(false);
 
   useEffect(() => {
   const tl = gsap.timeline();
