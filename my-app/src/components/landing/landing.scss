@@ -1,41 +1,36 @@
 @import "../../global.scss";
-
 .hero {
-  display: grid;
+  // display: grid;
   grid-template-columns: 66% auto;
   background-color: unset;
   padding: 0;
 
   .content {
-    @include mobile {
-      display: none;
-    }
+    width: 100%;
+    height: 100%;
     background-color: #6e00ff;
-    padding: 6em 8em 6em 4em;
+    // padding: 6em 8em 6em 4em;
     text-align: left;
     border-radius: 14px;
-    margin-left: 4em;
-    margin-bottom: 1em;
+    // margin-left: 4em;
+    // margin-bottom: 1em;
 
     h1 {
-      @include mobile {
-        font-size: 2.5em;
-      }
-      font-size: 4.5em;
+      font-size: 4em;
       line-height: 1.2em;
       color: white;
       text-align: left;
       margin: 0.3em;
-      margin-left: 2em;
+      // margin-left: 2em;
     }
     p {
       color: #ff64cb;
       text-align: left;
-      margin-left: 9em;
+      // margin-left: 9em;
     }
     .scroll {
       margin-top: 4em;
-      margin-left: 12em;
+      margin-left: 2em;
     }
   }
 }
@@ -45,11 +40,68 @@
 }
 
 .hero-design {
-  @include mobile {
-    display: none;
-  }
-  display: unset;
+  // @include mobile {
+  //   display: none;
+  // }
+  display: none;
+  // display: unset;
   margin-left: -50%;
   margin-top: 15%;
   width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background-color: unset;
+    padding: 0;
+    float: left;
+
+    .content {
+      width: 79.8%;
+      height: 75%;
+      background-color: #6e00ff;
+      padding: 6em 8em 6em 4em;
+      text-align: left;
+      border-radius: 14px;
+      margin-left: 4em;
+      margin-bottom: 1em;
+
+      h1 {
+        @include mobile {
+          font-size: 2.5em;
+        }
+        font-size: 4.5em;
+        line-height: 1.2em;
+        color: white;
+        text-align: left;
+        margin: 0.3em;
+        margin-left: 2em;
+      }
+      p {
+        color: #ff64cb;
+        text-align: left;
+        margin-left: 9em;
+      }
+      .scroll {
+        margin-top: 4em;
+        margin-left: 12em;
+      }
+    }
+  }
+
+  .meet {
+    margin: unset;
+  }
+
+  .hero-design {
+    @include mobile {
+      display: none;
+    }
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
 }

@@ -1,6 +1,9 @@
 import React, {useRef, useEffect} from 'react'
 import './quote.scss';
-import {TweenMax, Power3, gsap} from 'gsap'
+import {TweenMax, Power3, Power1, gsap} from 'gsap'
+
+// import { TimelineLite, TweenLite} from 'TweenLite'
+// import { useIntersection } from "react-use";
 // import * as THREE from 'three';
 
 // const scene = new THREE.Scene();
@@ -36,10 +39,27 @@ import {TweenMax, Power3, gsap} from 'gsap'
 export default function Quote() {
   let item = useRef(null);
 
+  // const flightPath = {
+  //   curviness: 1.25,
+  //   autoRotate: true,
+  //   values: [
+  //     {x: 100, y: -20}
+  //   ]
+  // }
+
+  // const tween = new gsap.TimelineLite();
+
+  // tween.add(
+  //   gsap.TweenLite.to('.paper-plane', 1, {
+  //     bezier: flightPath,
+  //     ease: Power1.easeInOut
+  //   })
+  // )
+
   // useEffect(() => {
-    // const tl = gsap.timeline();
+  //   const tl = gsap.timeline();
     // tl.to(".intro-text", {duration: 20, rotation: 360});
-    // TweenMax.to(
+    // gsap.TweenMax.to(
     //   item,
     //   .8,
     //   {
@@ -58,18 +78,19 @@ export default function Quote() {
   // },[])
 
   return (
-    <div class="quote">
-      {/* <canvas id="bg"></canvas> */}
-      <div class="quotes">
-      <div class="intro-text" ref={el => {item = el}}>
-        <h1 class="hide">
-          <span class="text">"Creating inovation</span>
+    <div className="quote">
+      {/* <canvas className="canvas" id="bg"></canvas> */}
+          <img class="paper-plane" src="../../../assets/paper.png" alt="paper-plane"></img>
+      <div className="quotes">
+      <div className="intro-text" ref={el => {item = el}}>
+        <h1 className="hide">
+          <span className="text">"Creating inovation</span>
         </h1>
-        <h1 class="hide">
-          <span class="text">For Everyday</span>
+        <h1 className="hide">
+          <span className="text">For Everyday</span>
         </h1>
-        <h1 class="hide">
-          <span class="text">people."</span>
+        <h1 className="hide">
+          <span className="text">people."</span>
         </h1>
       </div>
     </div>
