@@ -9,8 +9,6 @@ import Menu from './components/menu/Menu';
 import Quote from './components/Quotes/Quote'
 import Landing from './components/landing/Landing'
 import React from "react";
-import { Routes, Switch, Route} from 'react-router-dom';
-
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)

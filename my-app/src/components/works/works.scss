@@ -1,11 +1,48 @@
 @import "../../global.scss";
 
 .works {
-  background-color: crimson;
+  padding: 30px 5px 0px 5px;
+  background-color: #6e00ff;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
   align-items: center;
-  justify-content: center;
   position: relative;
+  gap: 20px;
+
+  .title {
+    display: none;
+
+    @include mobile {
+      margin-top: 10px;
+      height: 100vh;
+      display: contents;
+      align-items: center;
+      justify-content: center;
+      color: rgb(233, 233, 233);
+      font-size: 2rem;
+    }
+  }
+
+  .story {
+    flex: 8;
+    display: none;
+    font-weight: 100;
+
+    @include mobile {
+      height: 100vh;
+      display: contents;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      margin: 15px;
+      color: rgb(233, 233, 233);
+      font-size: 22px;
+      margin: 5px;
+    }
+  }
 
   .arrow {
     height: 70px;
@@ -34,9 +71,7 @@
     transition: all 1s ease-out;
 
     @include mobile {
-      height: 100vh;
-      flex-direction: column;
-      justify-content: center;
+      display: none;
     }
 
     .container {
@@ -56,7 +91,7 @@
 
         @include mobile {
           width: 90%;
-          height: 210px;
+          height: 150px;
           margin: 5px 0;
         }
 
